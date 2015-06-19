@@ -85,7 +85,7 @@ class JenkinsApi {
             if (ignoreTags.find { it + ">" == prefix}) {
                 return fullMatch
             } else {
-                return "$prefixrefs/heads/${missingJob.branchName}<"
+                return "${prefix}refs/heads/${missingJob.branchName}<"
             }
         }
 
